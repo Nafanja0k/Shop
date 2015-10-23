@@ -10,6 +10,7 @@ public class Main
 		Cart cart = new Cart();
 		cart.addToCart(new Product("gazeta",3.5));
 		cart.addToCart(new Fruit("apple", 6.0));
+		cart.addToCart(new Fruit("orange", 23.5));
 		
 		
 		cart.print();
