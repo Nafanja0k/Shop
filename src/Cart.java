@@ -15,7 +15,7 @@ public class Cart
 		products.add(theProduct);
 	}
 	
-	public void print(Cart theCart){
+	public void print(){
 		for(Product item : products)
 			System.out.println(item);
 	}
