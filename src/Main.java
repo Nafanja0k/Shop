@@ -11,6 +11,7 @@ public class Main
 		cart.addToCart(new Product("gazeta",3.5));
 		cart.addToCart(new Fruit("apple", 6.0));
 		
+		
 		cart.print();
 }
 
