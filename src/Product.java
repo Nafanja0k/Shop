@@ -1,17 +1,18 @@
 
-import java.security.*;public class Product
+import java.security.*;
+public class Product
 {
-	private static int genId;
-	private int id;
+	private static int genId = 1;
+	private String id;
 	private String shortName;
 	private double price;
 	
 	public Product(){
-		this("n/a", 0.0);
+		this("0", "n/a", 0.0);
 	}
 	
-	public Product(String theShortName, double thePrice){
-		id = getNextId();
+	public Product(String theId, String theShortName, double thePrice){
+		id = theId + Integer.toString(getNextId());
 		shortName = theShortName;
 		price = thePrice;
 	}
@@ -28,14 +29,14 @@ import java.security.*;public class Product
 		return price;
 	}
 	
-	public int getId(){
+	public String getId(){
 		return id;
 	}
 	
 	@Override
 	public String toString()
 	{
-		return "Tovar "+getId()+" "+getShortName()+" cena="+getPrice();
+		return "Superclass Tovar "+getId()+" "+getShortName()+" cena="+getPrice();
 	}
 	
 	

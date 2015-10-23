@@ -1,7 +1,7 @@
-public class Fruit extends Product
+public class Fruit extends Food
 {
 	public Fruit(String theShortName, double thePrice){
-		super(theShortName, thePrice);
+		super("1/", theShortName, thePrice);
 	}
 	@Override
 	public String toString()
