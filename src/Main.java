@@ -34,11 +34,12 @@ public class Main
 		boolean quit = false;
 		int menuItem;
 		do {
-			System.out.print("Choose menu item: ");
+			System.out.print("Choose menu item or enter product# and quantity (1/2/1 10): ");
 			menuItem = in.nextInt();
 			switch (menuItem) {
 				case 1:
 					System.out.println("You've chosen Products #1");
+					theCatalog.sort();
 					theCatalog.print();
 					break;
 				case 2:
@@ -49,7 +50,7 @@ public class Main
 					quit = true;
 					break;
 				default:
-					System.out.println("Invalid choice.");
+					theCart.addToCart(theCatalog.);
 			}
 		} while (!quit);
 		System.out.println("Bye-bye!");

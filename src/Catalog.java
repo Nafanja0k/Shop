@@ -1,6 +1,5 @@
-
 import java.util.*;
-public class Catalog
+public class Catalog 
 {
 	private String name;
 	private List<Product> products= new ArrayList<Product>();
@@ -23,10 +22,14 @@ public class Catalog
 		
 	}
 	
-
 	public void print(){
 		for (Product item : products)
 			System.out.println(item);
 		
 	}
+
+	public void sort() {
+		Collections.sort(products);
+	}
+
 }

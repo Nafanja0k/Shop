@@ -1,6 +1,4 @@
-
-import java.security.*;
-public class Product
+public class Product implements Comparable
 {
 	private static int genId = 1;
 	private String id;
@@ -38,7 +36,11 @@ public class Product
 	{
 		return "Superclass Tovar "+getId()+" "+getShortName()+" cena="+getPrice();
 	}
-	
-	
+
+	@Override
+	public int compareTo(Object o) {
+		return this.toString().compareTo(o.toString());
+	}
+
 	
 }
