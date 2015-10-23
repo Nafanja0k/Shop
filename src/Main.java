@@ -8,8 +8,8 @@ public class Main
 		System.out.print("Enter a number: ");
 		double number1 = input.nextDouble();*/
 		Cart cart = new Cart();
-		cart.add(new Product("gazeta",3.5));
-		cart.add(new Fruit("apple", 6.0));
+		cart.addToCart(new Product("gazeta",3.5));
+		cart.addToCart(new Fruit("apple", 6.0));
 		
 		cart.print();
 }
