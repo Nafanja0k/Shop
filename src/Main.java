@@ -4,17 +4,15 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		System.out.println("Hello World!");
-
-		Scanner input = new Scanner(System.in);
-
+		/*Scanner input = new Scanner(System.in);
 		System.out.print("Enter a number: ");
-		double number1 = input.nextDouble();
+		double number1 = input.nextDouble();*/
+		Cart cart = new ArrayList<Product>();
+		cart.add(new Product("gazeta",3.5));
+		cart.add(new Fruit("apple", 6.0));
+		
+		cart.print();
+}
 
-		System.out.print("Enter second number: ");
-		double number2 = input.nextDouble();
-
-		double product = number1 * number2;
-		System.out.printf("The product of both numbers is: %f", product);
-	}
+	
 }
