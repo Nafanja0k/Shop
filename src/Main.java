@@ -50,7 +50,7 @@ public class Main
 					quit = true;
 					break;
 				default:
-					theCart.addToCart(theCatalog.);
+					//theCart.addToCart(theCatalog.);
 			}
 		} while (!quit);
 		System.out.println("Bye-bye!");
